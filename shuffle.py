@@ -32,7 +32,7 @@ def shuffle():
 	#assumes all songs are properly named
 	songs = glob(radio_path)
 	print(songs)
-	numbers = range(1,len(songs)+1)
+	numbers = list(range(1,len(songs)+1)) #should work with updated shuffle library now
 	random.shuffle(numbers)
 	print(numbers)
 	for item in range(len(songs)):
